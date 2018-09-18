@@ -1,0 +1,17 @@
+{
+  "name": "keyword-pair-matcher",
+  "version": "0.0.1",
+  "description": "Highlight keyword pair",
+  "keywords": ["highlight", "keyword", "pair", "matcher"],
+  "repository": "https://github.com/susisu/keyword-pair-matcher",
+  "author": "Susisu <susisu2413@yahoo.co.jp>",
+  "license": "MIT",
+  "main": "lib/main.js",
+  "scripts": {},
+  "engines": {
+    "atom": ">=1.22.0 <2.0.0"
+  },
+  "activationCommands": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
