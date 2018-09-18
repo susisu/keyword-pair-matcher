@@ -2,16 +2,26 @@
   "name": "keyword-pair-matcher",
   "version": "0.0.1",
   "description": "Highlight keyword pair",
-  "keywords": ["highlight", "keyword", "pair", "matcher"],
+  "keywords": [
+    "highlight",
+    "keyword",
+    "pair",
+    "matcher"
+  ],
   "repository": "https://github.com/susisu/keyword-pair-matcher",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
   "main": "lib/main.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint lib",
+    "fix": "eslint lib --fix"
+  },
   "engines": {
     "atom": ">=1.22.0 <2.0.0"
   },
   "activationCommands": {},
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^5.6.0"
+  }
 }
