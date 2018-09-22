@@ -20,6 +20,27 @@
     "atom": ">=1.22.0 <2.0.0"
   },
   "activationCommands": {},
+  "configSchema": {
+    "keywordPairs": {
+      "order": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "begin/end",
+        "def/end",
+        "if/fi"
+      ],
+      "description": "Pairs of start and end keywords."
+    },
+    "highlightMatchingLineNumber": {
+      "order": 2,
+      "type": "boolean",
+      "default": false,
+      "description": "Highlight the line number of the matching keyword"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^5.6.0"
