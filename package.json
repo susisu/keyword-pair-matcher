@@ -1,7 +1,7 @@
 {
   "name": "keyword-pair-matcher",
   "version": "0.0.1",
-  "description": "Highlight keyword pair",
+  "description": "Highlights keyword pairs",
   "keywords": [
     "highlight",
     "keyword",
