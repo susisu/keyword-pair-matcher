@@ -28,7 +28,7 @@
         "type": "string"
       },
       "default": [],
-      "description": "Pairs of start and end keywords."
+      "description": "Pairs of start and end keywords (`start/end`)."
     },
     "highlightMatchingLineNumber": {
       "order": 2,
