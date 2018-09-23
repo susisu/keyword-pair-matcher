@@ -27,11 +27,7 @@
       "items": {
         "type": "string"
       },
-      "default": [
-        "begin/end",
-        "def/end",
-        "if/fi"
-      ],
+      "default": [],
       "description": "Pairs of start and end keywords."
     },
     "highlightMatchingLineNumber": {
