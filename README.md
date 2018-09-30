@@ -9,12 +9,12 @@ For Shell Script:
 ".shell.source":
   "keyword-pair-matcher":
     keywordPairs: [
-      "if/fi"
-      "case/esac"
-      "for/done"
-      "while/done"
-      "until/done"
-      "select/done"
+      "if..fi"
+      "case..esac"
+      "for..done"
+      "while..done"
+      "until..done"
+      "select..done"
     ]
 ```
 
@@ -24,11 +24,11 @@ For OCaml:
 ".ocaml.source":
   "keyword-pair-matcher":
     keywordPairs: [
-      "begin/end"
-      "for/done"
-      "while/done"
-      "struct/end"
-      "sig/end"
-      "object/end"
+      "begin..end"
+      "for..done"
+      "while..done"
+      "struct..end"
+      "sig..end"
+      "object..end"
     ]
 ```
