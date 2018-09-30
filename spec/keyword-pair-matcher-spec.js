@@ -14,7 +14,8 @@ function prepareEditor(name, text) {
 describe("keyword-pair-matcher", () => {
   beforeEach(() => {
     waitsForPromise(() => atom.packages.activatePackage("keyword-pair-matcher"));
-    atom.config.set(`${PKGNAME}.keywordPairs`, ["begin/end", "def/end", "do/done"]);
+    atom.config.set(`${PKGNAME}.keywordPairs`, ["begin..end", "def..end", "do..done"]);
+    atom.config.set(`${PKGNAME}.keywordCharacters`, "A-Za-z0-9_");
     atom.config.set(`${PKGNAME}.highlightMatchingLineNumber`, false);
   });
 
