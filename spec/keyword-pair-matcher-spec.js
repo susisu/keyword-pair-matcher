@@ -13,6 +13,10 @@ function prepareEditor(name, text) {
 
 describe("keyword-pair-matcher", () => {
   beforeEach(() => {
+    // Package activation will be deferred to the configured, activation hook, which is then triggered
+    // Activate activation hook
+    atom.packages.triggerDeferredActivationHooks();
+    atom.packages.triggerActivationHook('core:loaded-shell-environment');
     waitsForPromise(() => atom.packages.activatePackage("keyword-pair-matcher"));
     atom.config.set(`${PKGNAME}.keywordPairs`, ["begin..end", "def..end", "do..done"]);
     atom.config.set(`${PKGNAME}.keywordCharacters`, "A-Za-z0-9_");
