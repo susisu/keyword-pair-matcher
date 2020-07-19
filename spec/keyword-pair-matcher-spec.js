@@ -16,7 +16,7 @@ describe("keyword-pair-matcher", () => {
     // Package activation will be deferred to the configured, activation hook, which is then triggered
     // Activate activation hook
     atom.packages.triggerDeferredActivationHooks();
-    atom.packages.triggerActivationHook('core:loaded-shell-environment');
+    atom.packages.triggerActivationHook("core:loaded-shell-environment");
     waitsForPromise(() => atom.packages.activatePackage("keyword-pair-matcher"));
     atom.config.set(`${PKGNAME}.keywordPairs`, ["begin..end", "def..end", "do..done"]);
     atom.config.set(`${PKGNAME}.keywordCharacters`, "A-Za-z0-9_");
@@ -34,7 +34,7 @@ describe("keyword-pair-matcher", () => {
         "    end",
         "    baz",
         "  done",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(0, 0));
@@ -49,7 +49,7 @@ describe("keyword-pair-matcher", () => {
       const text = [
         "def",
         "  foo",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(1, 2));
@@ -62,7 +62,7 @@ describe("keyword-pair-matcher", () => {
       const text = [
         "def",
         "  done",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(0, 0));
@@ -79,7 +79,7 @@ describe("keyword-pair-matcher", () => {
       const text = [
         "def",
         "  foo",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(1, 2));
@@ -94,7 +94,7 @@ describe("keyword-pair-matcher", () => {
         "  do",
         "    foo",
         "  done",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(3, 2));
@@ -117,7 +117,7 @@ describe("keyword-pair-matcher", () => {
         "    end",
         "    baz",
         "  done",
-        "end"
+        "end",
       ].join("\n");
       waitsForPromise(() => prepareEditor("test", text).then(editor => {
         editor.setCursorBufferPosition(new Point(0, 0));

@@ -13,8 +13,8 @@
   "license": "MIT",
   "main": "lib/main.js",
   "scripts": {
-    "lint": "eslint lib",
-    "lint:fix": "eslint lib --fix"
+    "lint": "eslint lib spec '*.js'",
+    "lint:fix": "eslint --fix lib spec '*.js'"
   },
   "engines": {
     "atom": ">=1.22.0 <2.0.0"
@@ -48,7 +48,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@susisu/eslint-config": "^0.0.4",
-    "eslint": "^6.3.0"
+    "@susisu/eslint-config": "^0.0.23",
+    "eslint": "^7.5.0"
   }
 }
