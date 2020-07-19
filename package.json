@@ -20,6 +20,9 @@
     "atom": ">=1.22.0 <2.0.0"
   },
   "activationCommands": {},
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
   "configSchema": {
     "keywordPairs": {
       "order": 1,
